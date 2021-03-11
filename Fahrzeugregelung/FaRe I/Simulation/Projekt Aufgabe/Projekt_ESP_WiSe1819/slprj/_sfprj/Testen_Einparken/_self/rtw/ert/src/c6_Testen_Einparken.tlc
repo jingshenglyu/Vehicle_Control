@@ -1,0 +1,111 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   13 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "isInitialBarrier"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "Testen_Einparken:1396:278-294"\
+    }\
+    ChartData {\
+      Name         "startParkingspace"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "Testen_Einparken:1396:295-312"\
+    }\
+    ChartData {\
+      Name         "endParkingspace"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "Testen_Einparken:1396:313-328"\
+    }\
+    ChartData {\
+      Name         "drehzahl"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "Testen_Einparken:1396:329-337"\
+      Dimensions   [1,15000]\
+    }\
+    ChartData {\
+      Name         "barrierVec"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "Testen_Einparken:1396:338-348"\
+      Dimensions   [1,10]\
+    }\
+    ChartData {\
+      Name         "cl0"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "Testen_Einparken:1396:362-365"\
+    }\
+    ChartData {\
+      Name         "cl1"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "Testen_Einparken:1396:366-369"\
+    }\
+    ChartData {\
+      Name         "k"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "Testen_Einparken:1396:370-371"\
+    }\
+    ChartData {\
+      Name         "j"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "Testen_Einparken:1396:372-373"\
+    }\
+    ChartData {\
+      Name         "c"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "Testen_Einparken:1396:374-375"\
+    }\
+    ChartData {\
+      Name         "isParkingspaceEnd"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "Testen_Einparken:1396:386-403"\
+    }\
+    ChartData {\
+      Name         "cl2"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "Testen_Einparken:1396:404-407"\
+    }\
+    ChartData {\
+      Name         "isParkingspaceDetected"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "Testen_Einparken:1396:412-434"\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

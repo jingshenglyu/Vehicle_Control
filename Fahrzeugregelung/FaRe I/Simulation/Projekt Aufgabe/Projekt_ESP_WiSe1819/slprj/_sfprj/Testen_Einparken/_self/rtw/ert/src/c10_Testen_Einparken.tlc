@@ -1,0 +1,46 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   4 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "stateAbschnitt"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "Testen_Einparken:856:436-450"\
+    }\
+    ChartData {\
+      Name         "isInitialBarrier_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "Testen_Einparken:856:514-530"\
+    }\
+    ChartData {\
+      Name         "timer_1"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "Testen_Einparken:856:610-617"\
+    }\
+    ChartData {\
+      Name         "timer_3"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "Testen_Einparken:856:626-633"\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

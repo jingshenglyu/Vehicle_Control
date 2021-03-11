@@ -1,0 +1,3 @@
+Bitte laufen Sie zuerst einfach nur "Projekt_Gruppe_5.m".
+
+"Projekt_Gruppe_5.m" befindet sich in "Projekt_ESP_WiSe1617".
